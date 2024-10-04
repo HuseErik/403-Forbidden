@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Makulit ka Ha</title>
+    <title>Second Page: Warning</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Protest+Guerrilla&family=Protest+Revolution&family=Protest+Riot&family=Rye&family=Vollkorn+SC&display=swap" rel="stylesheet">
 
@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" type="text/css" href="./block.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <header id="huseerik" class="bg-dark text-center p-2">
         <a class="navbar-brand text-light fs-2 huse">
@@ -25,16 +25,26 @@
     <div class="bg-dark mt-lg-5 mt-md-3 col-11 container h-100 d-flex justify-content-center align-items-center">
         <div class="container h-100 d-flex justify-content-center align-items-center p-3 p-lg-5 p-md-5">
             <div class="row col-12">
-                <h1 class="text-danger mb-lg-4">Huwag Makulit</h1>
-                <p class="text-light">The administrator of this network has restricted access to site.</p>
-                <p class="text-light">If you think this is incorrect, talk to me stupid.</p>
+                <h1 class="text-danger mb-lg-4">Warning</h1>
+                <p class="text-light">Please refrain from unnecessary actions. The network administrator has restricted access to this site.</p>
+                <p class="text-light">If you believe this restriction is incorrect, kindly contact the administrator for clarification. Thank you.</p>
                 <button id="return1" class="btn btn-primary mt-1">Return to the previous page</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="bg-white m-5">
+    </div>
 
+    <footer id="footer" class="mt-auto text-white py-1 text-center bg-dark">
+        <div class="mx-2">Jose Eric A De Jesus</div>
+        <div class="mx-2">&copy;<span id="year"></span> My Website. | Aspiring Developer</div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
