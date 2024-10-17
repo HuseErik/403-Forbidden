@@ -34,3 +34,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+    document.getElementById('seeMore').addEventListener('click', function() {
+        var moreOptions = document.getElementById('moreOptions');
+        if (moreOptions.classList.contains('d-none')) {
+            moreOptions.classList.remove('d-none');
+            this.textContent = '▲ See Less ▲'; // Change button text to "See Less"
+        } else {
+            moreOptions.classList.add('d-none');
+            this.textContent = '▼ See More ▼'; // Change button text back to "See More"
+        }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
